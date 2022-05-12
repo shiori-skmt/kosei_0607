@@ -1,0 +1,133 @@
+// main: ../style.scss
+
+//// BRAKE POINT
+$breakpoints: (
+  'smartphone': 'screen and (max-width: #{$bp_smartphone_max})',
+  'tablet': 'screen and (min-width: #{$bp_tablet_min}) and (max-width: #{$bp_tablet_max})',
+  'pc_x_tablet': 'screen and (min-width: #{$bp_tablet_min})',
+  'sp_x_tablet': 'screen and (max-width: #{$bp_tablet_max})',
+  'pc_content_size': 'screen and (min-width: #{$bp_pc_min}) and (max-width: #{$base_content_width})',
+  'pc': 'screen and (min-width: #{$bp_pc_min})'
+)
+!default;
+
+
+@mixin media_queries($breakpoint: smartphone) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// transition
+@mixin transition($val...) {
+  @if(length($val) == 0) {
+    $val: 0.3s ease-out;
+  }
+  -wewbkit-transition: $val;
+  transition: $val;
+}
+
+
+// keyframes
+@mixin keyframe_animation($val...) {
+  -moz-animation: $val;
+  -webkit-animation: $val;
+  animation: $val;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// gradient color
+@mixin gradient_color_linear_multi($colors:(("#fff 0%"), ("#000 100%")), $dir:top, $ie_support:true) {
+  $dir_reverse: $dir;
+  $dir_start_old: left top;
+  $dir_end_old: left bottom;
+  @if $dir == top {
+    $dir_reverse: bottom;
+    $dir_start_old: left top;
+    $dir_end_old: left bottom;
+  } @else
+  if $dir == bottom {
+    $dir_reverse: top;
+    $dir_start_old: left bottom;
+    $dir_end_old: left top;
+  } @else
+  if $dir == left {
+    $dir_reverse: right;
+    $dir_start_old: left top;
+    $dir_end_old: right top;
+  } @else
+  if $dir == right {
+    $dir_reverse: left;
+    $dir_start_old: right top;
+    $dir_end_old: left top;
+  }
+  $str: ();
+  @for $i from 1 through length($colors) {
+    $ary: nth($colors, $i);
+    @each $item in $ary {
+      $str: append($str, #{$ary}, comma);
+    }
+  }
+  background: -webkit-linear-gradient($dir, $str);
+  background: -moz-linear-gradient($dir, $str);
+  background: -o-linear-gradient($dir, $str);
+  @if $ie_support == true {
+    background: -ms-linear-gradient($dir, $str);
+    background: linear-gradient(to $dir_reverse, $str);
+  }
+}
+
+// transform
+@mixin transform($val...) {
+  -webkit-transform: $val;
+  transform: $val;
+}
+@mixin transform_origin($origin:50% 50%) {
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+@mixin transform_style($val...) {
+  -webkit-transform-style: $val;
+  transform-style: $val;
+}
+
+// font-size
+@mixin fontsize($size: 14) {
+	font-size: $size + px;
+	font-size: $size / 10 + rem;
+}
+
+// main: ../style.scss
+
+// box shadow
+@mixin box_shadow($val...) {
+  -webkit-box-shadow: $val;
+  box-shadow: $val;
+}
+
+
+// text shadow
+@mixin text_shadow($val...) {
+  -webkit-text-shadow: $val;
+  text-shadow: $val;
+}
+
+// english font
+@mixin fontMincho{
+  font-family: $fontface_mincho;
+  font-weight: 600;
+}

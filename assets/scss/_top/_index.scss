@@ -1,0 +1,17 @@
+﻿//文字コードはutf-8
+@charset "UTF-8";
+.top {
+  &__title {
+    font-weight: bold;
+    @include media_queries(pc) {
+      color: #f00;
+    }
+    @include media_queries(tablet) {
+      color: #0f0;
+    }
+    @include media_queries {
+      color: #00f;
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+﻿//文字コードはutf-8
+@charset "utf-8";
+
+// sass functions
+@import "_common/variables";
+@import "_common/_mixins";
+@import "_common/reset";
+@import "_common/components";
+@import "_common/layout";
+@import "_common/header";
+@import "_common/footer";
+
+// 各ページscss
+@import "_top/index";

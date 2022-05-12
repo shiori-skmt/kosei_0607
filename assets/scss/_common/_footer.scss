@@ -1,0 +1,14 @@
+//文字コードはutf-8
+@charset "UTF-8";
+.footer {
+  border: 5px solid #000;
+  @include media_queries(pc){
+    border-color: #f00;
+  }
+  @include media_queries(tablet) {
+    border-color: #0f0;
+  }
+  @include media_queries{
+    border-color: #00f;
+  }
+}

@@ -1,0 +1,25 @@
+// main: ../style.scss
+
+///// 使用変数
+//===================================================================
+
+///// 画像ディレクトリ
+$dir_img: "/assets/img/";
+
+///// ブレークポイント
+$bp_pc_min: 769px;
+$bp_tablet_max: 768px;
+$bp_tablet_min: 481px;
+$bp_smartphone_max: 768px;
+
+///// font
+$fontface_default: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, Arial, Helvetica, Verdana, sans-serif, "ＭＳ Ｐゴシック", "MS PGothic";
+$fontface_en: 'Oswald', sans-serif;
+
+// テキストカラー
+$base_text_color: #333;
+$strong_text_color: #ff5420;
+
+
+//コンテンツ幅
+$base_content_width: 1200px;

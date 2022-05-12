@@ -1,0 +1,39 @@
+// main: ../style.scss
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $fontface_default;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $base_text_color;
+  @include media_queries(pc){
+    min-width: 1300px;
+    @include fontsize(14);
+  }
+	@include media_queries{
+    @include fontsize(12);
+	}
+}
+a {
+  color: inherit;
+  @include media_queries(pc){
+    @include transition();
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+.main {
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

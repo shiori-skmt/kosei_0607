@@ -1,0 +1,35 @@
+// main: ../style.scss
+
+/* 汎用モジュール
+========================================================*/
+// PC/SP 出し分け
+.modBp{
+  &Pc{
+    display: block;
+    @include media_queries{
+      display: none;
+    }
+    &--inline{
+      display: inline;
+      @include media_queries{
+        display: none;
+      }
+    }
+  }
+
+  &Sp{
+    display: none;
+    @include media_queries{
+      display: block;
+    }
+    &--inline{
+      display: none;
+      @include media_queries{
+        display: inline;
+      }
+    }
+  }
+}
+
+// 見出し系
+.modHeading{}
