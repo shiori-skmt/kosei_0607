@@ -1,14 +1,39 @@
 //文字コードはutf-8
 @charset "UTF-8";
 .header {
-  border: 5px solid #000;
-  @include media_queries(pc){
-    border-color: #f00;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 30px 26px;
+    color: #fff;
+    background-color: #064A91;
   }
-  @include media_queries(tablet) {
-    border-color: #0f0;
+  &__logo {
+    font-size: 0;
   }
-  @include media_queries{
-    border-color: #00f;
+  &__menu {
+    display: flex;
+    .item {
+      font-size: 14px;
+      &:not(:first-child){
+        margin-left: 20px;
+      }
+    }
   }
+  &__subMenu {
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+      padding: 15px 0;
+      background-color: #F2F2F2;
+    }
+    .item {
+      margin: 0 20px;
+      font-size: 16px;
+    }
+  }
+  @include media_queries(pc){}
+  @include media_queries(tablet){}
+  @include media_queries{}
 }
