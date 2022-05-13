@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no">
+  <title>SAMPLE</title>
+  <meta name="description" content="SAMPLE" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+</head>
+<body>
+<!--#include virtual="/assets/include/_header.html" -->
+<main class="main">
+  <div class="contents">
+    <h1 class="modHeadingLv1">プロパー商品一覧</h1>
+    <div class="modSearchBox">
+      <form action="DUMMY">
+        <dl class="modSearchBox__cont">
+          <dt class="modSearchBox__cont__title">検索条件</dt>
+          <dd class="modSearchBox__cont__item">
+            <dl class="modFormBox">
+              <dt class="modFormBox__title">No.</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">商品名</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">メーカー</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">JALコード</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">一般名称</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">薬効分類</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+            </dl>
+          </dd>
+          <dt class="modSearchBox__cont__title">絞り込み</dt>
+          <dd class="modSearchBox__cont__item">
+            <dl class="modFormBox">
+              <dt class="modFormBox__title">値引率</dt>
+              <dd class="modFormBox__input">
+                <div class="modFormBox__input__line">
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">〜</span>
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">％</span>
+                </div>
+              </dd>
+              <dt class="modFormBox__title">利益額</dt>
+              <dd class="modFormBox__input">
+                <div class="modFormBox__input__line">
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">〜</span>
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">円</span>
+                </div>
+              </dd>
+              <dt class="modFormBox__title">利益率</dt>
+              <dd class="modFormBox__input">
+                <div class="modFormBox__input__line">
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">〜</span>
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">％</span>
+                </div>
+              </dd>
+              <dt class="modFormBox__title">在庫数</dt>
+              <dd class="modFormBox__input">
+                <div class="modFormBox__input__line">
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">〜</span>
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">個</span>
+                </div>
+              </dd>
+              <dt class="modFormBox__title">購入規制数</dt>
+              <dd class="modFormBox__input">
+                <div class="modFormBox__input__line">
+                  <span class="input"><input type="text" class="modFormInput" value="01"></span>
+                  <span class="mark">個</span>
+                </div>
+              </dd>
+            </dl>
+
+            <div class="modFormBox modFormBox--ml0">
+              <ul class="modFormBox__radio">
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>先発・後発</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type01" class="modFormRadio"><input type="radio" id="type01" name="radio01" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type02" class="modFormRadio"><input type="radio" id="type02" name="radio01"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>取寄せ</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type03" class="modFormRadio"><input type="radio" id="type03" name="radio02" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type04" class="modFormRadio"><input type="radio" id="type04" name="radio02"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>欠品</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type05" class="modFormRadio"><input type="radio" id="type05" name="radio03" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type06" class="modFormRadio"><input type="radio" id="type06" name="radio03"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>買取り</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type07" class="modFormRadio"><input type="radio" id="type07" name="radio04" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type08" class="modFormRadio"><input type="radio" id="type08" name="radio04"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>廃盤</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type09" class="modFormRadio"><input type="radio" id="type09" name="radio05" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type10" class="modFormRadio"><input type="radio" id="type10" name="radio05"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>削除</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type11" class="modFormRadio"><input type="radio" id="type11" name="radio06" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type12" class="modFormRadio"><input type="radio" id="type12" name="radio06"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>画像</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type13" class="modFormRadio"><input type="radio" id="type13" name="radio07" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type14" class="modFormRadio"><input type="radio" id="type14" name="radio07"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>オススメ</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type15" class="modFormRadio"><input type="radio" id="type15" name="radio08" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type16" class="modFormRadio"><input type="radio" id="type16" name="radio08"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>サイト掲載</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type17" class="modFormRadio"><input type="radio" id="type17" name="radio09" checked><span>あり</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type18" class="modFormRadio"><input type="radio" id="type18" name="radio09"><span>なし</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="modFormBox__radio__item">
+                  <dl>
+                    <dt>規制区分</dt>
+                    <dd>
+                      <ul class="modFormRadioList">
+                        <li class="modFormRadioList__item">
+                          <label for="type19" class="modFormRadio"><input type="radio" id="type19" name="radio10" checked><span>毒薬</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type20" class="modFormRadio"><input type="radio" id="type20" name="radio10"><span>劇薬</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type21" class="modFormRadio"><input type="radio" id="type21" name="radio10"><span>麻薬</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type22" class="modFormRadio"><input type="radio" id="type22" name="radio10"><span>向精神薬</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type23" class="modFormRadio"><input type="radio" id="type23" name="radio10"><span>覚醒剤</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type24" class="modFormRadio"><input type="radio" id="type24" name="radio10"><span>覚醒剤原料</span></label>
+                        </li>
+                        <li class="modFormRadioList__item">
+                          <label for="type25" class="modFormRadio"><input type="radio" id="type25" name="radio10"><span>習慣性医薬品</span></label>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+
+            <dl class="modFormBox">
+              <dt class="modFormBox__title">販売開始日</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">登録日</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+              <dt class="modFormBox__title">最終更新日</dt>
+              <dd class="modFormBox__input"><input type="text" class="modFormInput"></dd>
+            </dl>
+          </dd>
+        </dl>
+        <div class="modSearchBox__submit">
+          <input type="submit" value="検索" class="modBtn modBtn--submit">
+        </div>
+      </form>
+    </div>
+
+    <div class="modSearchResults">
+      <div class="modSearchResults__top">
+        <ul class="modSearchResults__top__btn">
+          <li><button class="modBtn"><i class="modIconUpload"></i>CSVアップロード</button></li>
+          <li><a href="DUMMY" class="modBtn"><i class="modIconDownload"></i>CSVダウンロード</a></li>
+          <li><a href="DUMMY" class="modBtn">商品追加</a></li>
+          <li><a href="DUMMY" class="modBtn">編集</a></li>
+        </ul>
+      </div>
+      <div class="modSearchResults__table">
+        <table class="modTable">
+          <tr>
+            <th>No.</th>
+            <th>JANコード</th>
+            <th>商品名</th>
+            <th>規格</th>
+            <th>メーカー(販売元)</th>
+            <th>販売価格</th>
+            <th>値引率(掛率)</th>
+            <th>包装薬価(定価)</th>
+            <th>薬効分類(カテゴリ)</th>
+            <th>在庫数</th>
+            <th>在庫ステータス</th>
+            <th>購入制限数</th>
+            <th>特化</th>
+          </tr>
+          <tr>
+            <td>1498779228</td>
+            <td>4987792287412</td>
+            <td>アムロジピンOD錠10mg「CH」140錠</td>
+            <td>PTP100錠</td>
+            <td>長生堂製薬</td>
+            <td>20,180円（税別）</td>
+            <td>77.0%</td>
+            <td>2,490円</td>
+            <td>冠血管拡大剤</td>
+            <td>99999</td>
+            <td>○</td>
+            <td>99999</td>
+            <td>10,000円</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="modHeadingLv2">テーブル2</h2>
+      <div class="modSearchResults">
+        <div class="modSearchResults__top">
+          <ul class="modSearchResults__top__btn">
+            <li><button class="modBtn"><i class="modIconUpload"></i>CSVアップロード</button></li>
+            <li><a href="DUMMY" class="modBtn"><i class="modIconDownload"></i>CSVダウンロード</a></li>
+            <li><a href="DUMMY" class="modBtn">商品追加</a></li>
+            <li><a href="DUMMY" class="modBtn">編集</a></li>
+          </ul>
+        </div>
+        <div class="modSearchResults__table">
+          <table class="modTable">
+            <tr>
+              <th>No.</th>
+              <th>JANコード</th>
+              <th>商品名</th>
+              <th>規格</th>
+              <th>メーカー(販売元)</th>
+              <th>販売価格</th>
+              <th>値引率(掛率)</th>
+              <th>包装薬価(定価)</th>
+              <th>薬効分類(カテゴリ)</th>
+              <th>在庫数</th>
+              <th>在庫ステータス</th>
+              <th>購入制限数</th>
+              <th>特化</th>
+            </tr>
+            <tr>
+              <td>1498779228</td>
+              <td>4987792287412</td>
+              <td class="strong">アムロジピンOD錠10mg「CH」140錠</td>
+              <td class="focus">PTP100錠</td>
+              <td class="focus">長生堂製薬</td>
+              <td>20,180円（税別）</td>
+              <td>77.0%</td>
+              <td>2,490円</td>
+              <td>冠血管拡大剤</td>
+              <td>99999</td>
+              <td>○</td>
+              <td>99999</td>
+              <td>10,000円</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="modHeadingLv2">テーブル3</h2>
+      <div class="modSearchResults">
+        <div class="modSearchResults__top">
+          <p class="modSearchResults__top__error">商品No.00000の%項目%に入力内容に誤りがあります。修正して再度保存してください</p>
+          <ul class="modSearchResults__top__btn">
+            <li><a href="DUMMY" class="modBtn">商品追加</a></li>
+            <li><a href="DUMMY" class="modBtn">編集</a></li>
+          </ul>
+        </div>
+        <div class="modSearchResults__table">
+          <table class="modTable">
+            <tr>
+              <th>No.</th>
+              <th>JANコード</th>
+              <th>商品名</th>
+              <th>規格</th>
+              <th>メーカー(販売元)</th>
+              <th>販売価格</th>
+              <th>値引率(掛率)</th>
+              <th>包装薬価(定価)</th>
+              <th>薬効分類(カテゴリ)</th>
+              <th>在庫数</th>
+              <th>在庫ステータス</th>
+              <th>購入制限数</th>
+              <th>特化</th>
+            </tr>
+            <tr>
+              <td>1498779228</td>
+              <td class="error">4987792287412</td>
+              <td class="error">アムロジピンOD錠10mg「CH」140錠</td>
+              <td>PTP100錠</td>
+              <td>長生堂製薬</td>
+              <td>20,180円（税別）</td>
+              <td>77.0%</td>
+              <td>2,490円</td>
+              <td>冠血管拡大剤</td>
+              <td>99999</td>
+              <td>○</td>
+              <td>99999</td>
+              <td>10,000円</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script type="text/javascript" src="/assets/js/common.js"></script>
+</body>
+</html>
