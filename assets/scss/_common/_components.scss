@@ -90,6 +90,33 @@
     background: url(#{$dir_img}common/icon_download.svg) no-repeat 0 0;
     background-size: 100%;
   }
+  &Edit{
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    margin: 0 5px 0 0;
+    background: url(#{$dir_img}common/icon_edit.svg) no-repeat 0 0;
+    background-size: 100%;
+  }
+  &Add{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+    background: url(#{$dir_img}common/icon_add.svg) no-repeat 0 0;
+    background-size: 100%;
+  }
+  &Save{
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+    background: url(#{$dir_img}common/icon_save.svg) no-repeat 0 0;
+    background-size: 100%;
+  }
 }
 
 //検索
@@ -293,4 +320,37 @@
   td{
     font-size: 10px;
   }
+}
+
+//カラムレイアウト
+.modCol{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  &.col2 >*{
+      width: 560px;
+      margin-right: 40px;
+		margin-bottom: 40px;
+	}
+	&.col3 >*{
+		width: 380px;
+		margin-bottom: 40px;
+	}
+	&.col3 >*:not(:nth-child(3n)){
+		margin-right: 30px;
+	}
+	&.col4 >*{
+		width: 285px;
+		margin-bottom: 40px;
+	}
+	&.col4 >*:not(:nth-child(4n)){
+		margin-right: 20px;
+	}
+	&.col5 >*{
+		width: 220px;
+		margin-bottom: 40px;
+	}
+	&.col5 >*:not(:nth-child(5n)){
+		margin-right: 25px;
+	}
 }
