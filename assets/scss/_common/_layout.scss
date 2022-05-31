@@ -5,7 +5,7 @@
 }
 html{
   font-size: 62.5%;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -17,9 +17,9 @@ body {
     min-width: 1300px;
     @include fontsize(14);
   }
-	@include media_queries{
+  @include media_queries{
     @include fontsize(12);
-	}
+  }
 }
 a {
   color: inherit;
@@ -42,6 +42,12 @@ a {
   max-width: $base_content_width;
   margin: 53px auto 0;
   padding: 0 0 100px;
+  &__top {
+    display: flex;
+    & + .section {
+      margin: 0;
+    }
+  }
 }
 
 .section{
