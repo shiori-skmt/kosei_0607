@@ -126,6 +126,15 @@
     background: url(#{$dir_img}common/icon_save.svg) no-repeat 0 0;
     background-size: 100%;
   }
+  &Calendar{
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 18px;
+    margin: 0 5px 0 0;
+    background: url(#{$dir_img}common/icon_cal.svg) no-repeat 0 0;
+    background-size: 100%;
+  }
 }
 
 //検索
@@ -370,6 +379,38 @@
           width: calc(100% - 200px);
         }
       }
+    }
+    .input {
+        display: inline-block;
+        width: 100px;
+    }
+    .select {
+          position: relative;
+        display: inline-block;
+        padding: 6px 30px 6px 10px;
+        border: 1px solid #ccc;
+        background: #fff;
+        font-size: 14px;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            margin: auto;
+            width: 6px;
+            height: 6px;
+            border: 2px solid;
+            border-color:  transparent transparent #565656 #565656;
+            transform: rotate(-45deg);
+        }
+    }
+    .calendar {
+        display: inline-block;
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        background: #fff;
+        font-size: 14px;
     }
   }
   &02 {
