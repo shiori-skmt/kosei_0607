@@ -606,6 +606,7 @@ textarea::placeholder {
   height: 100%;
   display: flex;
   color: #55A619;
+  font-size: 14px;
 }
 .modDList03__item__inner .body__cate .btn--upLoad, .modDList03__item__inner .body__tag .btn--upLoad {
   top: 50%;
