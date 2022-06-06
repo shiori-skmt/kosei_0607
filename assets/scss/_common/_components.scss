@@ -82,6 +82,26 @@
       margin: 0 0 0 10px;
     }
   }
+  &--backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+
+    // ボタン
+    .btn {
+      &--pageback {
+        display: inline-block;
+        vertical-align: middle;
+        width: 180px;
+        height: 40px;
+        margin: 0;
+        background: url(#{$dir_img}common/btn_back_page.svg) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+      }
+    }
+  }
 }
 
 //アイコン
