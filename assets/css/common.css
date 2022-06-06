@@ -599,7 +599,7 @@ textarea::placeholder {
   content: "";
   display: block;
 }
-.modDList03__item__inner .body__cate .btn--cateTxt, .modDList03__item__inner .body__tag .btn--cateTxt {
+.modDList03__item__inner .body__cate .btn--cateTit, .modDList03__item__inner .body__tag .btn--cateTit {
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -607,6 +607,21 @@ textarea::placeholder {
   display: flex;
   color: #55A619;
   font-size: 14px;
+}
+.modDList03__item__inner .body__cate .btn--delete, .modDList03__item__inner .body__tag .btn--delete {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 5px;
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+.modDList03__item__inner .body__cate .btn--delete:before, .modDList03__item__inner .body__tag .btn--delete:before {
+  width: 8px;
+  height: 8px;
+  background: url(/assets/img/common/icon_delete_thin.svg) no-repeat 0 0;
+  background-size: 100%;
 }
 .modDList03__item__inner .body__cate .btn--upLoad, .modDList03__item__inner .body__tag .btn--upLoad {
   top: 50%;
