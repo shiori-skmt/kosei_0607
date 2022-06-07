@@ -297,6 +297,15 @@ textarea::placeholder {
   background: url(/assets/img/common/icon_tag.svg) no-repeat 0 0;
   background-size: 100%;
 }
+.modIconSearch {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px 0 0;
+  background: url(/assets/img/common/icon_search.svg) no-repeat 0 0;
+  background-size: 100%;
+}
 
 .modSearchBox {
   margin: 0 0 40px;
@@ -355,6 +364,53 @@ textarea::placeholder {
 }
 .modFormInput--textarea {
   min-height: 100px;
+}
+.modFormSearch {
+  display: block;
+  width: 350px;
+  height: 36px;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+}
+.modFormSearch .searchForm {
+  position: relative;
+}
+.modFormSearch .searchForm-input {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  height: 35px;
+}
+.modFormSearch .searchForm-submit {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  /* top: calc(50% - 19px); */
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+.modFormSearch .searchForm-submit::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #ccc;
+}
+.modFormSearch .searchForm-submit::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 6px;
+  top: calc(50% + 4px);
+  left: calc(50% - 1px);
+  border-top: solid 2px #CCC;
+  transform: rotate(45deg);
 }
 .modFormRadio {
   position: relative;
@@ -785,6 +841,7 @@ textarea::placeholder {
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .Checkbox-DummyInput {
