@@ -557,85 +557,56 @@ textarea::placeholder {
   margin: 0;
 }
 .modDList03__item {
+  position: relative;
   width: 285px;
   margin: 0 20px 25px 0;
 }
 .modDList03__item:nth-child(4n) {
   margin: 0 0 25px 0;
 }
-.modDList03__item__inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.modDList03__item__inner .body {
-  margin: auto 0 0;
-}
-.modDList03__item__inner .body__cate, .modDList03__item__inner .body__tag {
-  height: 50px;
-  border: 1px solid #707070;
-}
-.modDList03__item__inner .body__cate__inner, .modDList03__item__inner .body__tag__inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.modDList03__item__inner .body__cate--upLoad, .modDList03__item__inner .body__tag--upLoad {
-  border: 1px dashed #ccc;
-}
-.modDList03__item__inner .body__cate .btn, .modDList03__item__inner .body__tag .btn {
+.modDList03__item > .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
+  height: 50px;
+  border: 1px solid #707070;
+  font-size: 14px;
+  color: #55A619;
   cursor: pointer;
 }
-.modDList03__item__inner .body__cate .btn:before, .modDList03__item__inner .body__tag .btn:before {
-  content: "";
-  display: block;
-}
-.modDList03__item__inner .body__cate .btn--cateTit, .modDList03__item__inner .body__tag .btn--cateTit {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  color: #55A619;
-  font-size: 14px;
-}
-.modDList03__item__inner .body__cate .btn--delete, .modDList03__item__inner .body__tag .btn--delete {
+.modDList03__item > .btn--delete {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 5px;
   right: 5px;
+  padding: 0;
   border: 1px solid #ccc;
+  border-radius: 50%;
   z-index: 10;
 }
-.modDList03__item__inner .body__cate .btn--delete:before, .modDList03__item__inner .body__tag .btn--delete:before {
-  width: 8px;
-  height: 8px;
-  background: url(/assets/img/common/icon_delete_thin.svg) no-repeat 0 0;
-  background-size: 100%;
+.modDList03__item > .btn--delete:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/common/icon_delete_thin.svg) no-repeat 50% 50%;
+  background-size: 8px 8px;
 }
-.modDList03__item__inner .body__cate .btn--upLoad, .modDList03__item__inner .body__tag .btn--upLoad {
-  top: 50%;
-  left: 50%;
+.modDList03__item > .btn--upLoad {
+  border: 1px dashed #ccc;
+}
+.modDList03__item > .btn--upLoad:before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
   border: 1px solid #55A619;
-  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: url(/assets/img/common/icon_add_thin.png) no-repeat 50% 50%;
+  background-size: 12px 12px;
 }
-.modDList03__item__inner .body__cate .btn--upLoad:before, .modDList03__item__inner .body__tag .btn--upLoad:before {
-  width: 12px;
-  height: 12px;
-  background: url(/assets/img/common/icon_add_thin.png) no-repeat 0 0;
-  background-size: 100%;
-}
-.modDList03__item__inner .body__cate .btn--upLoad input, .modDList03__item__inner .body__tag .btn--upLoad input {
+.modDList03__item > .btn--upLoad input {
   display: none;
 }
 
