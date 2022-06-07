@@ -402,7 +402,7 @@
         }
       }
     }
-    &__radio{
+    &__radio,&__checkbox{
       display: flex;
       flex-wrap: wrap;
       margin: 0 0 0 -54px;

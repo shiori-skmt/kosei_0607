@@ -508,19 +508,19 @@ textarea::placeholder {
 .modFormBox__input__line .mark:last-child {
   padding-right: 0;
 }
-.modFormBox__radio {
+.modFormBox__radio, .modFormBox__checkbox {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 0 -54px;
 }
-.modFormBox__radio__item {
+.modFormBox__radio__item, .modFormBox__checkbox__item {
   margin: 5px 0 0 54px;
 }
-.modFormBox__radio__item > dl {
+.modFormBox__radio__item > dl, .modFormBox__checkbox__item > dl {
   display: flex;
   align-items: center;
 }
-.modFormBox__radio__item > dl > dt {
+.modFormBox__radio__item > dl > dt, .modFormBox__checkbox__item > dl > dt {
   margin: 0 10px 0 0;
 }
 .modFormBox--ml0 {
