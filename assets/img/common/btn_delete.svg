@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148" height="30" viewBox="0 0 148 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_397" data-name="長方形 397" width="13.558" height="16.721" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_3789" data-name="グループ 3789" transform="translate(-331 -881)">
+    <g id="長方形_322" data-name="長方形 322" transform="translate(331 881)" fill="#f2f2f2" stroke="#ccc" stroke-width="1">
+      <rect width="148" height="30" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="147" height="29" rx="14.5" fill="none"/>
+    </g>
+    <g id="グループ_3531" data-name="グループ 3531" transform="translate(343.246 886.64)" clip-path="url(#clip-path)">
+      <path id="パス_578" data-name="パス 578" d="M9.734,3.331l-1.674-.3a1.137,1.137,0,1,0-2.24-.394l-1.674-.3a2.837,2.837,0,1,1,5.588.986Z" fill="#707070"/>
+      <path id="線_332" data-name="線 332" d="M13.115,3.176-.148.837l.3-1.674L13.411,1.5Z" transform="translate(0.148 1.829)" fill="#707070"/>
+      <path id="パス_579" data-name="パス 579" d="M9.035,16.721H4.523a2.753,2.753,0,0,1-2.675-2.495l-.907-9H12.617l-.906,9A2.755,2.755,0,0,1,9.035,16.721Zm-6.214-9.8.719,7.132a1.052,1.052,0,0,0,.983.965H9.035a1.054,1.054,0,0,0,.984-.966l.718-7.131Z" fill="#707070"/>
+      <path id="線_333" data-name="線 333" d="M-.674,5.909-.85.025.85-.025l.176,5.884Z" transform="translate(5.124 8.05)" fill="#707070"/>
+      <path id="線_334" data-name="線 334" d="M.85,5.909l-1.7-.051L-.674-.025l1.7.051Z" transform="translate(8.259 8.05)" fill="#707070"/>
+    </g>
+    <text id="選択したタグを削除" transform="translate(414.902 901.5)" font-size="12" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="-54" y="0">選択したタグを削除</tspan></text>
+  </g>
+</svg>
