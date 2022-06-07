@@ -1,0 +1,8 @@
+<svg id="追加マーク" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <line id="線_400" data-name="線 400" x2="13.384" transform="translate(7.147 13.839)" fill="none" stroke="#55a619" stroke-width="1"/>
+  <line id="線_401" data-name="線 401" y2="13.384" transform="translate(13.839 7.147)" fill="none" stroke="#55a619" stroke-width="1"/>
+  <g id="楕円形_50" data-name="楕円形 50" fill="none" stroke="#55a619" stroke-width="1">
+    <circle cx="14" cy="14" r="14" stroke="none"/>
+    <circle cx="14" cy="14" r="13.5" fill="none"/>
+  </g>
+</svg>

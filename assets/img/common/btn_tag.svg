@@ -1,0 +1,21 @@
+<svg id="タグ" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="20" viewBox="0 0 81 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_383" data-name="長方形 383" width="12" height="12.001" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="oldタグ">
+    <g id="グループ_2589" data-name="グループ 2589" transform="translate(-545 -1372)">
+      <rect id="長方形_55" data-name="長方形 55" width="81" height="20" rx="10" transform="translate(545 1372)" fill="#55a619"/>
+    </g>
+    <text id="商品タグ" transform="translate(25 15)" fill="#fff" font-size="12" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="0" y="0">商品タグ</tspan></text>
+  </g>
+  <g id="タグアイコン" transform="translate(8 4)">
+    <g id="グループ_3477" data-name="グループ 3477">
+      <g id="グループ_3477-2" data-name="グループ 3477" clip-path="url(#clip-path)">
+        <path id="パス_570" data-name="パス 570" d="M12,6.853a1.51,1.51,0,0,0-.444-1.071L6.413.639A1.515,1.515,0,0,0,5.418.2L1.566,0l.028,0L1.515,0A1.516,1.516,0,0,0,0,1.516c0,.025,0,.051,0,.077L.2,5.419a1.518,1.518,0,0,0,.442.994l5.144,5.144a1.515,1.515,0,0,0,2.142,0l3.632-3.632-.279-.279.28.279A1.514,1.514,0,0,0,12,6.853M7.366,11a.724.724,0,0,1-1.025,0L1.2,5.854a.727.727,0,0,1-.211-.476L.791,1.553V1.516A.725.725,0,0,1,1.515.79h.035L5.378.986a.724.724,0,0,1,.476.211L11,6.341a.725.725,0,0,1,0,1.025h0Z" transform="translate(0)" fill="#fff"/>
+        <path id="パス_571" data-name="パス 571" d="M94.367,94.388a.922.922,0,1,0,1.3,0,.922.922,0,0,0-1.3,0" transform="translate(-91.891 -91.912)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
