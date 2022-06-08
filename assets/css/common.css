@@ -353,6 +353,7 @@ textarea::placeholder {
   padding: 5px 38px 5px 5px;
   width: 100%;
   height: 35px;
+  font-size: 15px;
 }
 .modFormSearch .searchForm-submit {
   position: absolute;
@@ -370,7 +371,7 @@ textarea::placeholder {
   top: calc(50% - 7px);
   left: calc(50% - 7px);
   border-radius: 50%;
-  box-shadow: 0 0 0 2px #ccc;
+  box-shadow: 0 0 0 2px #000;
 }
 .modFormSearch .searchForm-submit::after {
   position: absolute;
@@ -379,7 +380,7 @@ textarea::placeholder {
   height: 6px;
   top: calc(50% + 4px);
   left: calc(50% - 1px);
-  border-top: solid 2px #CCC;
+  border-top: solid 2px #000;
   transform: rotate(45deg);
 }
 .modFormRadio {
@@ -429,43 +430,11 @@ textarea::placeholder {
   margin: 0 5px 0 0;
 }
 .modFormCheckbox {
-  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-}
-.modFormCheckbox > span {
-  position: relative;
-  padding: 0 0 0 25px;
-}
-.modFormCheckbox > span::before, .modFormCheckbox > span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border-radius: 100%;
-  transform: translateY(-50%);
-}
-.modFormCheckbox > span::before {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ccc;
-  background: #fff;
-}
-.modFormCheckbox > span::after {
-  opacity: 0;
-  width: 8px;
-  height: 8px;
-  left: 6px;
-  background: #55A619;
-}
-.modFormCheckbox > input {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.modFormCheckbox > input:checked + span::after {
-  opacity: 1;
 }
 .modFormCheckboxList {
   display: flex;
@@ -473,6 +442,58 @@ textarea::placeholder {
 }
 .modFormCheckboxList__item {
   margin: 0 15px 0 0;
+}
+.modFormCheckbox-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border: 1px solid #CCC;
+}
+.modFormCheckbox-tagname {
+  margin-left: 10px;
+  display: block;
+}
+.modFormCheckbox:hover > .modFormCheckbox-input {
+  background: #FFF;
+}
+.modFormCheckbox > input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
+}
+.modFormCheckbox > input:focus + .modFormCheckbox-input {
+  background: #FFF;
+}
+.modFormCheckbox > input:checked + .modFormCheckbox-input {
+  background: #55A619;
+}
+.modFormCheckbox > input:checked + .modFormCheckbox-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  height: 2px;
+  transform: translate(-3px, 3px) rotateZ(-135deg);
+  transform-origin: 1px 1px;
+  background: #FFF;
+}
+.modFormCheckbox > input:checked + .modFormCheckbox-input::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  transform: translate(-2px, 3px) rotateZ(-45deg);
+  transform-origin: 1px 1px;
+  background: #FFF;
 }
 .modFormBox {
   display: flex;
@@ -805,66 +826,6 @@ textarea::placeholder {
 }
 .modCol.col5 > *:not(:nth-child(5n)) {
   margin-right: 25px;
-}
-
-.Checkbox {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.Checkbox-DummyInput {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #FFF;
-  border: 1px solid #CCC;
-}
-.Checkbox-labelTxt {
-  margin-left: 10px;
-  display: block;
-}
-.Checkbox:hover > .Checkbox-DummyInput {
-  background: #FFF;
-}
-.Checkbox-Input {
-  margin: 0;
-  width: 0;
-  opacity: 0;
-}
-.Checkbox-Input:focus + .Checkbox-DummyInput {
-  background: #FFF;
-}
-.Checkbox-Input:checked + .Checkbox-DummyInput {
-  background: #55A619;
-}
-.Checkbox-Input:checked + .Checkbox-DummyInput::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 35%;
-  height: 2px;
-  transform: translate(-3px, 3px) rotateZ(-135deg);
-  transform-origin: 1px 1px;
-  background: #FFFFFF;
-}
-.Checkbox-Input:checked + .Checkbox-DummyInput::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: 2px;
-  transform: translate(-2px, 3px) rotateZ(-45deg);
-  transform-origin: 1px 1px;
-  background: #FFFFFF;
 }
 
 .modImgBtn {
