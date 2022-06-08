@@ -185,15 +185,6 @@
     background: url(#{$dir_img}common/icon_cal.svg) no-repeat 0 0;
     background-size: 100%;
   }
-  &Select{
-    display: inline-block;
-    vertical-align: middle;
-    width: 10px;
-    height: 6px;
-    margin: 0 0 0 5px;
-    background: url(#{$dir_img}common/icon_select.svg) no-repeat 0 0;
-    background-size: 100%;
-  }
   &Delete{
     display: inline-block;
     vertical-align: middle;
@@ -333,21 +324,41 @@
   }
 
   //Select
-  &Select {
-    position: relative;
-    display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    background: #fff;
-    font-size: 14px;
-  }
-  &Calendar {
-    display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    background: #fff;
-    font-size: 14px;
-  }
+    &Select {
+      position: relative;
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        border-bottom: 2px solid #333;
+        border-right: 2px solid #333;
+        z-index: -1;
+      }
+      select{
+        padding-right: 16px;
+      }
+      &__l{
+        width: 180px;
+      }
+    }
+    &Calendar {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-size: 14px;
+    }
 
   //checkbox
   &Checkbox {
@@ -523,6 +534,9 @@
         }
         .body {
           width: calc(100% - 200px);
+          .modFormInput{
+            width: 200px;
+          }
         }
       }
     }
